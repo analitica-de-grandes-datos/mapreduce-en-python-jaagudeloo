@@ -24,4 +24,4 @@ if __name__ == '__main__':
     for clave, valor in diccio_ord:
         datos_num = sorted(valor, key = int)
         valor = ",".join(map(str, datos_num))
-        sys.stdout.write("{}    {}\n".format(clave, valor))
+        sys.stdout.write("{}	{}\n".format(clave, valor))
