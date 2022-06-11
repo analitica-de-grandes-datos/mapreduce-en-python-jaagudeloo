@@ -10,4 +10,4 @@ if __name__ == "__main__":
     col_2 = [tabla[i][2] for i in range(len(tabla))]
 
     for line in range(len(tabla)):
-        sys.stdout.write("{}\t{}\t{}\n".format(col_0[line], col_1[line], col_2[line]))
+        sys.stdout.write("{},{},{}\n".format(col_0[line], col_1[line], col_2[line]))

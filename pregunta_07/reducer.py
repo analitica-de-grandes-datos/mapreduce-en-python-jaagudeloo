@@ -6,15 +6,16 @@ import operator
 
 if __name__ == '__main__':
 
-    diccio = {}
+    tripletas = []
 
     for line in sys.stdin:
 
-        key, val1, val2 = line.split("\t")
+        key, val1, val2 = line.split(",")
         val2 = int(val2)
-        diccio[key] = (val1, val2)
+        tripletas_line = (key, val1, val2)
+        tripletas.append(tripletas_line)
 
-    lista_ord = sorted(diccio.items(), key = operator.itemgetter(0,2))
+    tripletas_ord = sorted(tripletas, key = operator.itemgetter(0, 2))
 
-    for campo in lista_ord:
-        sys.stdout.write("{},{},{}\n".format(campo[0], campo[1], campo[2]))
+    for campo in tripletas_ord:
+        sys.stdout.write("{}\t{}\t{}\n".format(campo[0], campo[1], campo[2]))
