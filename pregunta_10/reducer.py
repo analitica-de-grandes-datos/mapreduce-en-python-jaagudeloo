@@ -16,10 +16,8 @@ if __name__ == '__main__':
         numero = int(numero)
         for elemento in val:
             diccio[elemento].append(numero)
-        #print(val)
 
     diccio_ord = sorted(diccio.items(), key = operator.itemgetter(0))
-    #print(diccio_ord)
 
     for clave, valor in diccio_ord:
         datos_num = sorted(valor, key = int)
