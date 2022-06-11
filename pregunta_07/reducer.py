@@ -18,4 +18,4 @@ if __name__ == '__main__':
     tripletas_ord = sorted(tripletas, key = operator.itemgetter(0, 2))
 
     for campo in tripletas_ord:
-        sys.stdout.write("{}\t{}\t{}\n".format(campo[0], campo[1], campo[2]))
+        sys.stdout.write("{}   {}   {}\n".format(campo[0], campo[1], campo[2]))
